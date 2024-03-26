@@ -60,5 +60,5 @@ func ServerisOnline(utcTimeString string) bool {
     currentTime := time.Now().UTC()
     timeDifference := currentTime.Sub(utcTime)
 
-	return timeDifference <= time.Minute
+	return timeDifference <= time.Minute * 5
 }
